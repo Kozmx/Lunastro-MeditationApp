@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lunastro_app/main_page/main_page.dart';
+import 'package:lunastro_app/features/login_page/get_started.dart';
+import 'package:lunastro_app/features/login_page/topics.dart';
+import 'package:lunastro_app/features/main_page/main_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,9 +12,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home:MainPage(),
+    return MaterialApp(
+      home: GetStartedPage(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
     );
   }
 }
