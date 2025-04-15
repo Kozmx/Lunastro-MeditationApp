@@ -9,13 +9,18 @@ class projectColor {
   static Color CreamyApricot = Color(0xffFFE7BF);
   static Color KantorBlue = Color(0xff03174D);
   static Color ColdMorning = Color(0xffE5E5E5);
+  static Color BreonneBlue = Color(0xffE6E7F3);
+  static Color MidnighBlush = Color(0xff98A1BD);
 }
 // 
 class projectPadding {
   static const EdgeInsets symmetricPaddingH = EdgeInsets.symmetric(horizontal: 20, vertical: 0);
+  static const EdgeInsets x2symmetricPaddingH = EdgeInsets.symmetric(horizontal: 40, vertical: 0);
   static const EdgeInsets symmetricPaddingV = EdgeInsets.symmetric(horizontal: 0, vertical: 10);
+  static const EdgeInsets x5symmetricPaddingV = EdgeInsets.symmetric(horizontal: 0, vertical: 50);
   static const EdgeInsets symmetricText = EdgeInsets.symmetric(horizontal: 15,vertical: 0);
   static const EdgeInsets topPadding = EdgeInsets.only(top: 155);
+  static const EdgeInsets toptitlePadding = EdgeInsets.only(top: 80);
   static const EdgeInsets buttonBottomPadding = EdgeInsets.only(top: 475);
   static const EdgeInsets bottomPadding = EdgeInsets.only(bottom:15 );
   static const EdgeInsets symmetricListtile = EdgeInsets.symmetric(horizontal: 15,vertical: 5);
@@ -123,5 +128,19 @@ extension ProjectTextStyles on BuildContext {
     fontSize: 10,
     fontWeight: FontWeight.w300,
     color: projectColor.BleanchedAlmond
+  );
+  TextStyle get breonneBlueTitleLarge => Theme.of(this).textTheme.titleLarge!.copyWith(
+    fontSize: 28,
+    fontWeight: FontWeight.bold,
+    color: projectColor.BreonneBlue
+  );
+  TextStyle get breonneBlueBodyLarge => Theme.of(this).textTheme.bodyLarge!.copyWith(
+    fontSize: 16,
+    color: projectColor.BreonneBlue
+  );
+  TextStyle get creamyApricotTitle2xLarge => Theme.of(this).textTheme.titleLarge!.copyWith(
+    fontSize: 36,
+    fontWeight: FontWeight.bold,
+    color: projectColor.CreamyApricot
   );
 }
