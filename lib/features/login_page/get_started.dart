@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lunastro_app/core/constants.dart';
+import 'package:flutter/widgets.dart';
+import 'package:lunastro_app/core/widgets.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({super.key});
@@ -8,11 +10,10 @@ class GetStartedPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var assetYogaPath = "lib/core/images/purple_yoga.jpg";
     var user = "User";
-    var getstarted = 'GET STARTED';
     var exploreTheApp = 'Explore the app, Find some peace of mind to prepare for meditation';
     var hiUserWelcome = 'Hi $user, Welcome';
     return Scaffold(
-      body: _pageContainerWidget(assetYogaPath: assetYogaPath, hiUserWelcome: hiUserWelcome, exploreTheApp: exploreTheApp, getstarted: getstarted),
+      body: _pageContainerWidget(assetYogaPath: assetYogaPath, hiUserWelcome: hiUserWelcome, exploreTheApp: exploreTheApp,),
     );
   }
 }
@@ -23,13 +24,11 @@ class _pageContainerWidget extends StatelessWidget {
     required this.assetYogaPath,
     required this.hiUserWelcome,
     required this.exploreTheApp,
-    required this.getstarted,
   });
 
   final String assetYogaPath;
   final String hiUserWelcome;
   final String exploreTheApp;
-  final String getstarted;
 
   @override
   Widget build(BuildContext context) {
@@ -62,18 +61,7 @@ class _pageContainerWidget extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(top:450),
-            child: ElevatedButton(
-              onPressed: () {},//topic page
-              child: Text(
-                "${getstarted}", 
-                style: context.blackTitleSmall,
-              ),
-              style: ElevatedButton.styleFrom(
-                fixedSize: Size(374, 63),
-                backgroundColor: projectColor.ColdMorning,
-                foregroundColor: Colors.black
-              ),
-            ),
+            child: projectStadiumButton(buttonText:"GET ST" ,fColor:projectColor.KantorBlue,textStyle: context.bleachedAlmondBodySmall,),
           ),
         ],
       ),
