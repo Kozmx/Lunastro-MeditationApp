@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_cupertino_datetime_picker: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -20,4 +21,10 @@ flutter:
   
   assets:
     - lib/core/images/
+  fonts:
+    - family: HelveticaNeue
+      fonts:
+      - asset: lib/core/fonts/HelveticaNeue-Medium.otf
+      - asset: lib/core/fonts/HelveticaNeueBold.ttf
+
 

@@ -61,7 +61,7 @@ class _pageContainerWidget extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(top:450),
-            child: projectStadiumButton(buttonText:"GET STARTED" ,fColor:projectColor.KantorBlue,bColor: projectColor.ColdMorning,textStyle: context.blackBodyLarge,),
+            child: projectStadiumButton(buttonText:"GET ST" ,fColor:projectColor.KantorBlue,textStyle: context.bleachedAlmondBodySmall,),
           ),
         ],
       ),
