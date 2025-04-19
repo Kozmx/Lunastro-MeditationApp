@@ -12,12 +12,12 @@ class projectColor {
 }
 // 
 class projectPadding {
-  static const EdgeInsets symmetricPaddingH = EdgeInsets.symmetric(horizontal: 20, vertical: 0);
+  static const EdgeInsets symmetricPaddingH = EdgeInsets.symmetric(horizontal: 14, vertical: 0);
   static const EdgeInsets symmetricPaddingV = EdgeInsets.symmetric(horizontal: 0, vertical: 10);
   static const EdgeInsets symmetricText = EdgeInsets.symmetric(horizontal: 15,vertical: 0);
   static const EdgeInsets topPadding = EdgeInsets.only(top: 80);
   static const EdgeInsets bottomPadding = EdgeInsets.only(bottom:15 );
-  static const EdgeInsets symmetricListtile = EdgeInsets.symmetric(horizontal: 15,vertical: 5);
+  static const EdgeInsets symmetricCard = EdgeInsets.symmetric(vertical: 20,horizontal: 14);
   
 }
 
@@ -54,6 +54,11 @@ extension ProjectTextStyles on BuildContext {
   TextStyle get coldMorningTitleMedium => Theme.of(this).textTheme.titleMedium!.copyWith(
     fontSize: 20,
     fontWeight: FontWeight.w400,
+    color: projectColor.ColdMorning
+  );
+  TextStyle get coldMorningTitleMediumBold => Theme.of(this).textTheme.titleMedium!.copyWith(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
     color: projectColor.ColdMorning
   );
   TextStyle get bleachedAlmondTitleMedium => Theme.of(this).textTheme.titleMedium!.copyWith(
